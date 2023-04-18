@@ -15,7 +15,8 @@
         'name' => 'Nirav Gajera',
         'location' => 'Ahmedabad, Gujarat',
         'contact' => '+91 7383171393',
-        'mail' => 'niravg.arsenal@gmail.com'
+        'mail' => 'niravg.arsenal@gmail.com',
+        //'github' => 'https://github.com/nirav-gajera'
       ];
      
       $this->view('pages/index', $data);

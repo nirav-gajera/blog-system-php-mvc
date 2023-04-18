@@ -7,6 +7,7 @@
     <p class="lead"><?php echo $data['name']; ?></p>
     <p class="lead"><?php echo $data['location']; ?></p>
     <p class="lead"><?php echo $data['contact']; ?></p>
+    <!--<p class="lead"><a href ="https://github.com/nirav-gajera"></p></a>-->
     <p class="lead"><?php echo $data['mail']; ?></p>
     </div>
   </div> 
