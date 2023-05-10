@@ -4,7 +4,7 @@ class Post {
     public function __construct() {
         $this->db = new Database;
     }
-
+    //get post
     public function getPosts(){
         $this->db->query('SELECT *,
                             posts.id as postId,
@@ -20,7 +20,8 @@ class Post {
 
         return $result;
     }
-
+    
+    //add post
     public function addPost($data){
         $this->db->query('INSERT INTO posts(user_id, title, img, body) VALUES (:user_id, :title, :img, :body)');
         $this->db->bind(':user_id', $data['user_id']);
@@ -43,7 +44,8 @@ class Post {
 
         return $row;
     }
-
+    
+    //update post
     public function updatePost($data) {
         $this->db->query('UPDATE posts SET title = :title, img = :img, body = :body WHERE id = :id');
         $this->db->bind(':id', $data['id']);
