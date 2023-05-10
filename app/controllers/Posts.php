@@ -52,9 +52,6 @@ class Posts extends Controller {
                 $data['title_err'] = 'Please enter post title';
             }
 
-            // echo '<pre>';
-            // print_r($data);
-            // echo '</pre>';exit;
 
             if(empty($tmp_name)){
                 $data['img_err'] = 'Please upload image';
@@ -182,7 +179,7 @@ class Posts extends Controller {
                 redirect('posts');
             }
             
-            //call delete method from post mode
+            //call delete method from post
             if($this->postModel->deletePost($id)){
                 flash('post_message', 'Post Removed');
                 redirect('posts');
