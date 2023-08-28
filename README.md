@@ -7,3 +7,6 @@ blog management system using php mvc
 User can Login, Register- 
 
 Add ,update and delete their posts
+
+Demo Id: test@bot.com |
+     pass: bot123
